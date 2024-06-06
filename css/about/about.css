@@ -1,0 +1,67 @@
+#aboutContainer {
+  display: grid;
+  place-content: center;
+}
+
+#aboutWrapper {
+  max-width: 700px;
+  padding: 200px 20px 200px 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+  border-radius: 22px;
+  height: 100%;
+}
+#aboutLable {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#textContent {
+  font-weight: 100;
+  color: gray;
+  margin-top: 30px;
+}
+#NavButton {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 50% 50%;
+}
+#next {
+  text-align: right;
+}
+
+#NavButton i {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 470px) {
+  #textContent {
+    font-weight: 100px;
+    color: gray;
+    margin-top: 30px;
+    font-size: 13px;
+    text-align: left;
+  }
+  #NavButton i{
+    font-size: 30px;
+  }
+}
+
+
+#dividerIn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+#divider{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.26);
+}

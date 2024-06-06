@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- global.css -->
+    <link rel="stylesheet" href="../globalStyle.css">
+    <!-- nav.css -->
+    <link rel="stylesheet" href="../css/nav.css">
+    <!-- about.css from about folder -->
+    <link rel="stylesheet" href="../css/about/about.css">
+    <link rel="stylesheet" href="/loading.css">
+    <title>About</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+
+
+
+<!-- Loading Overlay -->
+<div id="LoadingsCREEN">
+    <span>LO</span>
+    <div class="loader">
+        <svg viewBox="0 0 80 80">
+            <circle id="test" cx="40" cy="40" r="32"></circle>
+        </svg>
+    </div>
+    <span>AD</span>
+
+    <div class="loader triangle">
+        <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+    </div>
+    <span>IN</span>
+
+    <div class="loader">
+        <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+    </div>
+    <span>G</span>
+
+</div>
+
+
+        <!-- NavBar  >> nav.css -->
+        <nav>
+            <div id="title">FRONTEND <br> BACKEND</div>
+            <div id="navs">
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <li>Projects</li>
+                <li>Courses</li>
+            </div>
+        </nav>
+
+
+        <div id="aboutContainer">
+            <div class="About" id="aboutWrapper">
+                <div id="aboutLable">
+                    About
+                </div>
+                <p id="textContent">
+                    Hi there! 👋 I'm Utkarsh Verma, a web development enthusiast with expertise in the MERN stack, Next.js, Git/GitHub, and Sanity.io. Passionate about crafting seamless digital experiences, I'm constantly exploring new technologies and pushing boundaries in the world of web development. Let's build something awesome together!
+                </p>
+                <div id="NavButton">
+                    <div style="opacity: 0;" id="previous">
+                        Previous
+                        <i class="ri-arrow-up-circle-fill"></i>
+                    </div>
+                    <div onclick="scrollToEducation()" id="next">
+                        Next
+                        <i class="ri-arrow-down-circle-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="divider"></div>
+
+            <div class="Education" id="aboutWrapper">
+                <div id="aboutLable">
+                    Education
+                </div>
+                <p id="textContent">
+                    10 + 2 | from Narayana Public School Gonda | <br> <br>
+                    Web Dev | from Udemy / YouTube / Self Taught from docs and books
+                </p>
+                <div id="NavButton">
+                    <div onclick="scrollToAbout()" id="previous">
+                        Previous
+                        <i class="ri-arrow-up-circle-fill"></i>
+                    </div>
+                    <div onclick="scrollToSkills()" id="next">
+                        Next
+                        <i class="ri-arrow-down-circle-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="divider"></div>
+
+
+            <div class="Skills" id="aboutWrapper">
+                <div id="aboutLable">
+                    Skills
+                </div>
+                <p id="textContent">
+                    <span style="color: white;">MERN STACK</span> <br> <br>
+                    MONGO DB | EXPRESS JS | REACT JS | NODE JS
+
+                    <div id="dividerIn"></div>
+
+
+                    <span style="color: white;">NEXT JS</span>
+
+                    <div id="dividerIn"></div>
+
+                </p>
+                <div id="NavButton">
+                    <div onclick="scrollToEducation()" id="previous">
+                        Previous
+                        <i class="ri-arrow-up-circle-fill"></i>
+                    </div>
+                    <div style="opacity: 0;" id="next">
+                        Next
+                        <i class="ri-arrow-down-circle-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="divider"></div>
+        <div id="divider"></div>
+        <div id="divider"></div>
+
+    
+
+
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="/routes/about.js"></script>
+<script>
+        // Wait for all assets to load
+        window.onload = function() {
+          // Remove the loading overlay
+          var loadingOverlay = document.getElementById('LoadingsCREEN');
+          loadingOverlay.style.display="none";
+    
+        };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli / Home</title>
+    <!-- Global Css from globalStyle.css -->
+    <link rel="stylesheet" href="globalStyle.css">
+
+    <!-- nav.css -->
+    <link rel="stylesheet" href="./css/nav.css">
+
+    <!-- hero.css -->
+    <link rel="stylesheet" href="./css/hero.css">
+
+<link rel="stylesheet" href="./loading.css">
+    <!-- Remix Icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <!-- Googlr Font -->
+    <!-- font-family: "Open Sans", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+<!-- Loading Overlay -->
+    <div id="LoadingsCREEN">
+        <span>LO</span>
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+        <span>AD</span>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+        <span>IN</span>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+        <span>G</span>
+
+    </div>
+
+
+
+    <!-- NavBar  >> nav.css -->
+    <nav>
+        <div id="title">FRONTEND <br> BACKEND</div>
+        <div id="navs">
+            <a href="./routes/about.html">
+                <li>About</li>
+            </a>
+            <li>Projects</li>
+            <li>Courses</li>
+        </div>
+    </nav>
+
+
+
+<!-- Hero Container   >> hero.css -->
+    <div id="container">
+        <div id="wrapper">
+            <img id="profileImg" src="https://static.vecteezy.com/system/resources/thumbnails/008/846/297/small_2x/cute-boy-avatar-png.png" alt="">
+            <div id="name">Hey, I'm Utkarsh</div>
+            <p id="about">"Welcome! I'm a seasoned web developer specializing in the MERN stack and Next.js framework. With a passion for crafting efficient, dynamic, and user-friendly web applications, I bring expertise in front-end and back-end development to the table.</p>
+
+            <p id="about-mob">
+                Expert MERN stack and Next.js developer here! Crafting dynamic and efficient web applications is my specialty. Let's bring your digital vision to life together!
+            </p>
+
+            <div id="label">Top Skills</div>
+            <p id="skills">Mongo DB | Express JS | React JS | Node JS | Next JS | Git & Github | Sanity</p>
+            <button onclick="displayHelloButt()" id="hellobutoon">Say Hello</button>
+
+            <div id="hello">
+                <a href="https://github.com/yesutkarsh">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yesutkarsh/">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/yesutkarshverma/">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <i class="ri-youtube-fill"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        var helloIcon = document.querySelector('#hello')
+
+        const displayHelloButt = ()=>{
+            helloIcon.style.display="flex"
+        }
+
+
+
+
+        // Wait for all assets to load
+        window.onload = function() {
+            // Remove the loading overlay
+            var loadingOverlay = document.getElementById('LoadingsCREEN');
+            loadingOverlay.style.display="none";
+        };
+   
+
+    </script>
+</body>
+</html>
