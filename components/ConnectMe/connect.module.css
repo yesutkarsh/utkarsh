@@ -1,0 +1,41 @@
+
+
+.main{
+    position: absolute;
+    border: 0.1px solid rgba(255, 255, 255, 0.027);
+    height: 20%;
+    width: 90%;
+    max-width: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(253, 253, 253, 0.041);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 50px;
+    box-shadow: 10px 10px 100px 10px rgba(20, 97, 160, 0.137);
+    z-index: 999;
+    
+}
+
+.blackBox{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  z-index: 100;
+
+}
+
+.Exit{
+  color: rgba(255, 255, 255, 0.349);
+  position: absolute;
+  top: 75%;
+  z-index: 999;
+  left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+}

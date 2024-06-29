@@ -1,15 +1,19 @@
-nav{
+.nav{
+    position: relative;
+    z-index: 999;
     margin: 40px;
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: left;
 }
-nav #title{
+.nav #title{
     line-height: 55px;
     font-size: 40px;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
     color: whitesmoke;
+    letter-spacing: 1px;
+    
 }
 #navs{
     font-weight: 100;
@@ -18,13 +22,14 @@ nav #title{
     text-align: right;
     font-size: 17px;
     line-height: 37px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 445px) {
-    nav{
+    .nav{
         margin: 20px;
     }
-    nav #title{
+    .nav #title{
         line-height: 40px;
     }
     #navs{

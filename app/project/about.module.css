@@ -1,0 +1,51 @@
+.about{
+    margin: 40px;
+}
+
+.abtNav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.about i{
+    font-size: 25px;
+    color: gray;
+}
+.searchBar{
+background-color: rgb(31, 31, 31);
+
+}
+.about input{
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.733);
+    background-color: rgb(31, 31, 31);
+    padding-left: 20px;
+}
+.about input:focus{
+    outline: none;
+}
+.about input::placeholder{
+    color: rgba(128, 128, 128, 0.705);
+}
+
+.projectContainer{
+    display: none;
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+@media screen and (max-width: 445px) {
+    .about{
+        margin: 20px;
+    }
+}

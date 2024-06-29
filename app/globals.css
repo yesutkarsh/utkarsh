@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* background-color: black; */
+}
+html, body{
+  color: white;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+/* hero container */
+
+#container{
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  top: -250px;
+  z-index: 0;
+}
+#wrapper{
+  margin: 20px;
+  border: 0.1px solid rgba(204, 204, 204, 0.027);
+  padding: 40px;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.048);
+  max-width: 700px;
+  border-radius: 22px;
+  box-shadow: 10px 10px 100px 10px rgba(20, 97, 160, 0.137);
+}
+#container #profileImg{
+  height: 70px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  #container{
+      top: -150px;
+  }
+  #wrapper{
+      margin: 20px;
+  }
+}
+
+
+#container #name{
+  transition: 1s;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#container #about{
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+}
+#about-mob{
+  display: none;
+  font-weight: 400;
+}
+#label{
+  margin-top: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#skills{
+
+  font-weight: 400;
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#container #wrapper button{
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 22px;
+  width: 120px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.164);
+  color: rgba(255, 255, 255, 0.856);
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 10px 10px 100px 10px rgba(20, 97, 160, 0.158);
+  font-weight: 300;
+}
+
+
+#hello{
+  font-size: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  display: none;
+  transition: 1s;
+}
+
+@media screen and (max-width: 449px) {
+  #container #about{
+      display: none;
+  }
+  #container #about-mob{
+      display: flex;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(141, 140, 140);
+  }
+  #wrapper{
+      padding: 20px;
+      margin-top: 50px;
+      /* background-color: antiquewhite; */
+      max-width: 700px;
+  }
+}
+
