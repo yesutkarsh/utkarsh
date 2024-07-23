@@ -3,7 +3,7 @@
     padding: 10px;
     margin: 10px;
     border-radius: 12px;
-    background-color: rgba(44, 44, 44, 0.397);
+    background-color: rgb(250, 250, 250);
     border: 1px solid rgba(255, 255, 255, 0.068);
   box-shadow: 10px 10px 100px 10px rgba(41, 100, 95, 0.37);
 
@@ -12,14 +12,14 @@
 .title{
     font-size: 30px;
     font-weight: 800;
-    color: rgba(247, 247, 247, 0.534);
+    color: rgb(3, 3, 3);
 }
 
 .description{
     max-width: 400px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 10px 10px 10px 0px;
-    color: grey;
+    color: rgb(78, 78, 78);
 }
 
 .navagations{
@@ -27,4 +27,12 @@
     display: flex;
     align-items: center;
 }
-
+.deployedLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 20px;
+    color: black;
+}

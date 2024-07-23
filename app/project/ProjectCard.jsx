@@ -9,10 +9,11 @@ export default function ProjectCard({title, description,deployedLink}) {
         <div className={style.description}>{description}</div>
         <div className={style.navagations}>
           <div>
-            <Link href={deployedLink}>
+            <Link className={style.deployedLink} href={deployedLink}>
+            <i class="ri-user-smile-fill"></i>
             See Project
-            </Link>
             <i class="ri-arrow-right-up-line"></i>
+            </Link>
             </div>
         </div>
     </div>

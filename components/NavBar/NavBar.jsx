@@ -6,7 +6,9 @@ export default function NavBar() {
     <>
     
     <nav className={style.nav}>
+      <Link href={"/"}>
         <div id={style.title}>FRONTEND <br /> BACKEND</div>
+      </Link>
         <div id={style.navs}>
         <Link href="/">
             <li>Home</li>

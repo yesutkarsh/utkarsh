@@ -22,6 +22,7 @@
 }
 
 .blackBox{
+  
   height: 100%;
   width: 100%;
   position: absolute;
@@ -38,4 +39,31 @@
   left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 300;
+}
+
+
+#github:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(104, 101, 101);
+}
+#linkedin:hover{
+  cursor: pointer;
+  
+  transition: 0.5s;
+  color: #0077b5;
+}
+#insta:hover{
+  cursor: pointer;
+
+  transition: 0.5s;
+  color: #f9ce34;
+  
+}
+#ytb:hover{
+  
+  transition: 0.5s;
+  cursor: pointer;
+  color: #ff0002;
+
 }
