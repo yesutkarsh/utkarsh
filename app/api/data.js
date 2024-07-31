@@ -8,10 +8,10 @@ export const Projects = [
     },
     {
         id:2,
-        title:"ECOMMERCE APP",
-        description:"SCALABLE ECOMMERCE APP with app modern ecoomerce features like cart, order, recommendation and more...",
+        title:"Startup Website",
+        description:"Build Website for my very own Print On Demand startup using Next js Backend and Frontend, integerated Payment Gateway, order summary page, Profile (Auth0).",
         github:"",
-        deployedLink:"https://yesnetflixgpt.vercel.app/"
+        deployedLink:"https://printwallah.vercel.app/"
         },
     
 
