@@ -85,9 +85,9 @@ export default function Project() {
     {filteredProject.length > 0? 
     
     filteredProject.map((project) => {
-      return <div className="flex">
+      return (
       <ProjectCard key={project.id} image={project.image} title={project.title} description={project.description} deployedLink={project.deployedLink} />
-      </div>
+      )
     })
     :warning
   }
