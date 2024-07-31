@@ -78,19 +78,23 @@ export default function Project() {
         </nav>
       </div>
     </form>
+<div className="flex">
 
 <div className={style.projectContainer}>
 
     {filteredProject.length > 0? 
     
     filteredProject.map((project) => {
-      return <ProjectCard key={project.id} title={project.title} description={project.description} deployedLink={project.deployedLink} />
+      return <div className="flex">
+      <ProjectCard key={project.id} image={project.image} title={project.title} description={project.description} deployedLink={project.deployedLink} />
+      </div>
     })
     :warning
   }
 
   </div>
 
+  </div>
     </>
   );
 }

@@ -2,7 +2,7 @@
     max-width: 900px;
     padding: 10px;
     margin: 10px;
-    border-radius: 12px;
+    border-radius: 17px;
     background-color: rgb(250, 250, 250);
     border: 1px solid rgba(255, 255, 255, 0.068);
   box-shadow: 10px 10px 100px 10px rgba(41, 100, 95, 0.37);
@@ -35,4 +35,10 @@
     gap: 5px;
     font-size: 20px;
     color: black;
+}
+.image img{
+    margin-bottom: 20px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 100px 1px rgba(163, 148, 14, 0.205);
 }
