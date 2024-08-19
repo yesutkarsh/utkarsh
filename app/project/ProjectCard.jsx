@@ -4,7 +4,6 @@ export default function ProjectCard({image,title, description,deployedLink}) {
   return (
     <>
     <div className={style.ProjectCard}>
-    <div className={style.image}><img src={image} alt="project image is loading..." /></div>
         <div className={style.title}>{title}</div>
         <div className={style.description}>{description}</div>
         <div className={style.navagations}>
