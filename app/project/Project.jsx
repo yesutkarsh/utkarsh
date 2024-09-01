@@ -26,7 +26,7 @@ export default function Project() {
       
         
         const newProjectList = projects.filter((project)=>{
-          return project.description.toLowerCase().includes(newQuery.toLowerCase())
+          return project?.tags?.toLowerCase().includes(newQuery.toLowerCase())
         })
         setFiltereProject(newProjectList)
         if(!newProjectList.length>0){

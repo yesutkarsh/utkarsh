@@ -34,7 +34,7 @@ export default function HomePage() {
             </p>
 
             <div id="label">Top Skills</div>
-            <p id="skills">Mongo DB | Express JS | React JS | Node JS | Next JS | Git & Github | Sanity</p>
+            <p id="skills">Mongo DB | Express JS | React JS | Node JS | Next JS | Typescript |Git & Github | Google Cloud | Docker | Kubernetes | Linux |</p>
             <button onClick={displayHelloButt} id="hellobutoon">Contact Me</button>
 
             <div id="hello">

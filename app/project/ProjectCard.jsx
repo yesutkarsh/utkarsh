@@ -1,22 +1,27 @@
 import Link from "next/link"
 import style from "./projectCard.module.css"
+import Image from "next/image"
+import { motion } from "framer-motion"
 export default function ProjectCard({image,title, description,deployedLink}) {
   return (
     <>
-    <div className={style.ProjectCard}>
-        <div className={style.title}>{title}</div>
-        <div className={style.description}>{description}</div>
-        <div className={style.navagations}>
-          <div>
-            <Link className={style.deployedLink} href={deployedLink}>
-            <i class="ri-user-smile-fill"></i>
-            See Project
-            <i class="ri-arrow-right-up-line"></i>
-            </Link>
-            </div>
-        </div>
+    <motion.div initial={{opacity:0}} animate={{opacity:1}} className={style.wrapper}>
+      <Image width={300} height={300} src={image}></Image>
+    <div className={style.title}>{title}</div>
+    <div className={style.description}>{description}</div>
+    <div className={style.nav}>
+      <button className="bg-[#eaeaea] text-black">
+      <i class="ri-eye-line"></i>
+        View Live
+        </button>
+        <Link href={deployedLink}>
+      <button className="bg-black">
+      <i class="ri-github-line"></i>
+        View Code
+        </button>
+        </Link>
     </div>
-    
+    </motion.div>
     </>
   )
 }
