@@ -54,9 +54,6 @@ a{
 }
 
 @media screen and (max-width: 576px) {
-  #container{
-      top: -150px;
-  }
   #wrapper{
       margin: 20px;
   }
