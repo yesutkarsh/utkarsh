@@ -9,7 +9,7 @@ export default function Meet() {
         <div className={style.meet}>
             <span></span>
             <div className={style.info}>
-                <h1>Friday, 4 October @09:00</h1>
+                <h1>Saturday, 5 October @02:00</h1>
                 <Link href={"https://meet.google.com/xoc-epdw-nvm"}>Meet Link: <span style={{backgroundColor:"transparent", color:"#34a853"}}>utkarshverma/linkToMeetAPI </span></Link>
             </div>
         </div>
