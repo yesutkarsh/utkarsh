@@ -1,4 +1,27 @@
-
+document.addEventListener("DOMContentLoaded", () => {
+    const card = document.getElementById("card");
+    
+    const navagation = document.querySelectorAll(".navagation");
+    const closeButton = document.querySelectorAll("#close-btn");
+  console.log(closeButton)
+  
+    const today = new Date().toISOString().split("T")[0];
+    const lastShown = localStorage.getItem("lastShown");
+  
+    // Show the card if it hasn't been shown today
+    if (lastShown !== today) {
+      card.classList.add("show");
+    navagation[0].style.display="flex"
+      localStorage.setItem("lastShown", today);
+    }
+  
+    // Close the card and prevent it from showing again today
+    closeButton[0].addEventListener("click", () => {
+      card.classList.remove("show");
+      navagation[0].style.display="none"
+    });
+  });
+  
 
 const topics = [
     {
