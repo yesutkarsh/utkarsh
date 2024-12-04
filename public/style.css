@@ -1,14 +1,21 @@
 *{
     margin: 0;
     list-style: none;
+    font-family: "Source Code Pro";
 
 }
 body{
     background-color: #ffffff;
-    font-family: "Source Code Pro", serif;
 }
-li{
+li li{
+    background-color: #e8d44d;
     padding: 10px;
+    color: rgb(24, 24, 24);
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+    min-height: 50px;
+    margin: 10px;
 }
 h1{
     margin-bottom: 50px;
@@ -26,3 +33,44 @@ a{
     text-decoration: none;
     color: black;
 }
+
+/* Add this to your CSS file */
+li {
+    opacity: 1;
+}
+  li li{
+    display: flex;
+    align-items: center;
+  }
+  li.animate {
+    animation: animate-li 0.5s ease-out;
+    animation-delay: 0.1s;
+  }
+  
+  @keyframes animate-li {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+  /* .navagation{
+    background-color: whitesmoke;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    z-index: 999;
+  } */
+
+  .title{
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 20px;
+    text-decoration: underline;
+  }
