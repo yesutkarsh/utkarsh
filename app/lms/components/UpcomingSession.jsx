@@ -24,9 +24,9 @@ export default function UpcomingSession() {
     <>
         <div className={style.heading}>Today’s Schedule </div>
     {
-        sessions.map((session)=>{
+        sessions.map((session,index)=>{
             return(
-                <div className={style.sessionCard}>
+                <div key={index} className={style.sessionCard}>
                     <span>{session.title}</span>
                     <span>{"Instructor: "+session.instructor}</span>
                     <span>{session.link == false?`Link Will Be Available at ${session.timing} on ${session.day + " "+session.date}`:"Join Now"}</span>
