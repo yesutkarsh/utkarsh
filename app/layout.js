@@ -5,10 +5,16 @@ import "./globals.css";
 import NavBar from "@/components/NavBar/NavBar";
 import { Provider } from "react-redux";
 import store from "@/utils/store";
-
 const inter = Inter({ subsets: ["latin"] });
-
+import { usePathname } from 'next/navigation';
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+
+  // Nav Bar will not be available in these routes
+  const hideNavbarRoutes = ['/lms'];
+  const shouldHideNavbar = hideNavbarRoutes.includes(pathname);
+
+  
   return (
     <html lang="en">
       <head>
@@ -19,7 +25,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <Provider store={store}>
-          <NavBar />
+          {!shouldHideNavbar &&<NavBar />}
           {children}
         </Provider>
       </body>
