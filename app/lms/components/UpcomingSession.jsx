@@ -22,7 +22,7 @@ export default function UpcomingSession() {
     ]
   return (
     <>
-        <div className={style.heading}>Today’s Schedule </div>
+        <div className={style.heading}>Upcoming Sessions </div>
     {
         sessions.map((session,index)=>{
             return(
