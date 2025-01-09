@@ -24,6 +24,12 @@
     line-height: 37px;
     font-weight: 400;
 }
+#navs li:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: transform 0.5s, color 0.5s;
+}
 
 @media screen and (max-width: 445px) {
     .nav{

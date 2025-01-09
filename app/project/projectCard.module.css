@@ -1,4 +1,5 @@
 .wrapper{
+    position: relative;
     background-color: rgb(8, 8, 8);
     min-width: 300px;
     height: auto;
@@ -9,26 +10,30 @@
 }
 .wrapper img{
     border-radius: 12px 12px 0px 0px;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
 .title{
-    font-weight: 900;
+    font-weight: 400;
     margin: 10px;
     font-size: 30px;
     max-width: 300px;
+    padding: 5px;
+
 }
 
 .description{
+    padding: 5px;
     max-width: 350px;
     margin: 10px;
 }
 
 .nav{
-    margin: 10px;
+    margin: 40px 10px 10px 10px;
     display: flex;
     gap: 20px;
+    position: relative;
 }
 .nav button{
     padding: 10px;
@@ -38,4 +43,9 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
+
+}
+
+#github{
+    border: 1px solid rgba(255, 255, 255, 0.209);
 }

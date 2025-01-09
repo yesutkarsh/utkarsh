@@ -9,10 +9,10 @@ export default function ProjectCard({ image, title, description, deployedLink, g
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }} // Starting state
-        animate={{ opacity: 1, scale: 1 }}   // Ending state
-        transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
-        whileHover={{ scale: 1.05 }} // Slight scale on hover
+        initial={{ opacity: 0, scale: 0.9 }} 
+        animate={{ opacity: 1, scale: 1 }}   
+        transition={{ duration: 0.6, ease: "easeOut" }} 
+        whileHover={{ scale: 1.05 }} 
         className={style.wrapper}
       >
         {/* Image with hover effect */}
@@ -63,6 +63,7 @@ export default function ProjectCard({ image, title, description, deployedLink, g
           </Link>
           <Link href={github}>
             <motion.button
+              id={style.github}
               whileHover={{ scale: 1.1 }}
               className="bg-black text-white"
             >

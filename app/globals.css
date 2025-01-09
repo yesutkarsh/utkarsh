@@ -20,7 +20,6 @@ html, body{
 }
 
 a{
-  color: white;
   text-decoration: none;
 }
 
@@ -37,16 +36,19 @@ a{
   position: fixed;
   top: 0px;
   z-index: 0;
+  background-color: rgb(255, 255, 255);
+
 }
 #wrapper{
   margin: 20px;
   border: 0.1px solid rgba(204, 204, 204, 0.027);
   padding: 40px;
   margin-top: 50px;
-  background-color: rgba(255, 255, 255, 0.048);
+  background-color: #190e0e;
   max-width: 700px;
   border-radius: 22px;
-  box-shadow: 10px 10px 200px 10px rgba(6, 60, 104, 0.062);
+  border: 1px solid rgba(245, 245, 245, 0.126);
+  box-shadow: 10px 10px 200px 10px rgba(6, 60, 104, 0.289);
 }
 #container #profileImg{
   height: 70px;
@@ -58,6 +60,7 @@ a{
       margin: 20px;
   }
 }
+
 
 
 #container #name{
@@ -95,17 +98,22 @@ a{
 #container #wrapper button{
   font-size: 15px;
   margin-top: 10px;
-  padding: 10px;
-  border-radius: 22px;
-  width: 120px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 12px;
+  width: 100%;
   border: none;
   background-color: rgba(0, 0, 0, 0.164);
   color: rgba(255, 255, 255, 0.856);
-  border: 1px solid rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.163);
   box-shadow: 10px 10px 100px 10px rgba(20, 97, 160, 0.089);
   font-weight: 300;
+  
 }
-
+.buttons-control{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
 #hello{
   font-size: 30px;

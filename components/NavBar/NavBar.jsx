@@ -26,15 +26,7 @@ export default function NavBar() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
       >
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/project">Projects</Link>
-        </li>
+     
       </motion.ul>
     </motion.nav>
   );

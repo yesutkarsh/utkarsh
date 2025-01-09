@@ -4,6 +4,7 @@ import { toggleConnectCard } from "@/utils/slices/uiAndUxslice";
 import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import style from "./home.module.css"
+import Link from "next/link";
 export default function HomePage() {
   const dispatch = useDispatch();
   const cardToggle = useSelector((store) => store?.toggleConnect?.toggleCard);
@@ -16,22 +17,20 @@ export default function HomePage() {
     <>
       {cardToggle ? <ConnectMe /> : null}
       <motion.div
-      className={style.container}
+        className={style.container}
         id="container"
         initial={{ opacity: 0 }} // Fade-in effect
         animate={{ opacity: 1 }} // Fully visible after animation
         transition={{ duration: 0.8 }}
       >
         <motion.div
-            style={{backgroundColor:"#0c0c0c"}}
-
           id="wrapper"
           initial={{ x: "-100vw" }} // Slide-in effect from left
           animate={{ x: 0 }}
           transition={{ type: "spring", stiffness: 60, duration: 0.8 }}
         >
           <motion.div
-          
+
             id="name"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -46,7 +45,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Welcome! I&apos;m a seasoned web developer specializing in the MERN
+            I&apos;m a seasoned web developer specializing in the MERN
             stack and Next.js framework. With a passion for crafting efficient,
             dynamic, and user-friendly web applications, I bring expertise in
             front-end and back-end development to the table.
@@ -82,32 +81,33 @@ export default function HomePage() {
             Git & Github | Google Cloud | Docker | Kubernetes | Linux |
           </motion.p>
 
-          <motion.button
-            id="hellobutoon"
-            onClick={displayHelloButt}
-            whileHover={{ scale: 1.1 }} // Hover effect
-            transition={{ duration: 0.3 }}
-          >
-            Contact Me
-          </motion.button>
 
-          <motion.div
-            id="hello"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7, duration: 0.6 }}
-          >
-            <a href="https://github.com/yesutkarsh">
-              <i className="ri-github-fill"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/yesutkarsh/">
-              <i className="ri-linkedin-box-fill"></i>
-            </a>
-            <a href="https://www.instagram.com/yesutkarshverma/">
-              <i className="ri-instagram-fill"></i>
-            </a>
-            <i className="ri-youtube-fill"></i>
-          </motion.div>
+
+
+          <div className="buttons-control">
+            <Link href="/project">
+              <motion.button
+                id="hellobutoon"
+                whileHover={{ scale: 1.1 }} // Hover effect
+                transition={{ duration: 0.3 }}
+              >
+                View My Projects
+              </motion.button>
+            </Link>
+
+
+            <motion.button
+              id="hellobutoon"
+              onClick={displayHelloButt}
+              whileHover={{ scale: 1.1 }} // Hover effect
+              transition={{ duration: 0.3 }}
+            >
+              Hire Me
+            </motion.button>
+
+          </div>
+
+
         </motion.div>
       </motion.div>
 

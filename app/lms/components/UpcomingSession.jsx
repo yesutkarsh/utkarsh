@@ -4,21 +4,13 @@ export default function UpcomingSession() {
 
     let sessions = [
         {
-            title:"DOM & Firebase",
+            title:"Objects and Prototye",
             link:"https://meet.google.com/znf-ecop-ouk",
             instructor:"Utkarsh Verma",
             date:"December 14",
             timing:"07:38",
             day:"Saturday"
         },
-        {
-            title:"Stack DSA",
-            link:false,
-            instructor:"no info available",
-            date:"December 15",
-            timing:"02:00",
-            day:"Sunday",
-        }
     ]
   return (
     <>
