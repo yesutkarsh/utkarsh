@@ -3,7 +3,6 @@ import ConnectMe from "@/components/ConnectMe/ConnectMe";
 import { toggleConnectCard } from "@/utils/slices/uiAndUxslice";
 import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
-import style from "./home.module.css"
 import Link from "next/link";
 export default function HomePage() {
   const dispatch = useDispatch();
@@ -17,7 +16,6 @@ export default function HomePage() {
     <>
       {cardToggle ? <ConnectMe /> : null}
       <motion.div
-        className={style.container}
         id="container"
         initial={{ opacity: 0 }} // Fade-in effect
         animate={{ opacity: 1 }} // Fully visible after animation
@@ -45,7 +43,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            I&apos;m a seasoned web developer specializing in the MERN
+            A seasoned web developer specializing in the MERN
             stack and Next.js framework. With a passion for crafting efficient,
             dynamic, and user-friendly web applications, I bring expertise in
             front-end and back-end development to the table.
@@ -105,11 +103,27 @@ export default function HomePage() {
               Hire Me
             </motion.button>
 
+
+            <a href="/resume.pdf" download="resume.pdf" >
+            <motion.button
+              id="hellobutoon"
+              whileHover={{ scale: 1.1 }} // Hover effect
+              transition={{ duration: 0.3 }}
+            >
+              Download Resume
+            </motion.button>
+            </a>
+
           </div>
 
 
         </motion.div>
+
+
+
       </motion.div>
+      
+
 
 
 

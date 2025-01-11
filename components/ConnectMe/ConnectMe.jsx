@@ -23,7 +23,9 @@ export default function ConnectMe() {
           <Link href={"https://github.com/yesutkarsh"}>
         <i id={style.github} class="ri-github-fill"></i>
           </Link>
+          <Link href={"https://www.linkedin.com/in/yesutkarsh/"}>
         <i id={style.linkedin} class="ri-linkedin-box-fill"></i>
+        </Link>
         <i id={style.insta} class="ri-instagram-fill"></i>
         <i id={style.ytb} class="ri-youtube-fill"></i>
         </motion.div>

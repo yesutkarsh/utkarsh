@@ -71,7 +71,7 @@ export default function Project() {
           {!toggleSearch? 
           <i onClick={showSearch} class="ri-search-line"></i>
           :
-          <button onClick={handleSearch} type="submit">
+          <button style={{color:"white"}} onClick={handleSearch} type="submit">
             Search
             </button>
           }
