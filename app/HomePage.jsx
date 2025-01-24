@@ -4,16 +4,76 @@ import { toggleConnectCard } from "@/utils/slices/uiAndUxslice";
 import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import About from "@/components/About.jsx/About";
 export default function HomePage() {
   const dispatch = useDispatch();
   const cardToggle = useSelector((store) => store?.toggleConnect?.toggleCard);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [about, setAbout] = useState(false);
+
 
   const displayHelloButt = () => {
     dispatch(toggleConnectCard());
   };
 
+  useEffect(() => {
+    const video = document.createElement('video');
+    video.src = 'https://cdn.pixabay.com/video/2019/04/20/22908-331768732_large.mp4';
+    video.preload = 'auto';
+    video.muted = true;
+
+    video.oncanplaythrough = () => {
+      setVideoLoaded(true);
+    };
+  }, []);
+
+
   return (
     <>
+    {about?<About/>:null}
+
+    <button className={"aboutBtn"} onClick={()=>setAbout(!about)}>{about? <>
+      <div className="flex items-center justify-center gap-2">
+      <i class="ri-close-line"></i> 
+     Close About
+      </div>
+    </>:
+    <>
+    <div className="flex items-center justify-center gap-2">
+    <i class="ri-user-smile-fill"></i>
+    About
+    </div>
+    </>
+    
+    }</button>
+<div className="relative w-full h-screen overflow-hidden">
+      {/* Black background during loading */}
+      <div 
+        className={`absolute inset-0 bg-black transition-opacity duration-500 ${
+          videoLoaded ? 'opacity-0' : 'opacity-100'
+        }`} 
+      />
+
+
+{videoLoaded && (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source 
+            src="https://cdn.pixabay.com/video/2022/07/12/123885-729425509_large.mp4" 
+            type="video/mp4" 
+          />
+        </video>
+      )}
+
+      {/* Dark shade overlay */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+
       {cardToggle ? <ConnectMe /> : null}
       <motion.div
         id="container"
@@ -123,6 +183,7 @@ export default function HomePage() {
 
       </motion.div>
       
+      </div>
 
 
 

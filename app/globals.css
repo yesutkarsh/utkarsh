@@ -21,7 +21,30 @@ html, body{
 a{
   text-decoration: none;
 }
+.aboutBtn {
+  position: absolute;
+  z-index: 999; /* Ensure it's always on top */
+  padding: 10px 20px;
+  background-color: #1a1a1a; /* Dark mode background */
+  color: #ffffff; /* Text color for contrast */
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 0 105px rgba(255, 255, 255, 0.288); /* Glowing shadow */
+  cursor: pointer;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
 
+.aboutBtn {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aboutBtn:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* More intense glow on hover */
+}
 
 
 
@@ -30,8 +53,15 @@ a{
 #container{
   display: grid;
   place-content: center;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   background-color: #0f1316;
+
 }
 #wrapper{
   margin: 10px;

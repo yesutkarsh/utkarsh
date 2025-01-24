@@ -1,5 +1,4 @@
 .about{
-    
     margin: 40px;
 }
 
@@ -11,10 +10,16 @@
 .about i{
     font-size: 25px;
     color: gray;
+    margin-top: 180px;
 }
 .searchBar{
 background-color: rgb(31, 31, 31);
+margin-top: 180px;
 
+
+}
+.about button{
+    margin-top: 180px;
 }
 .about input{
     height: 40px;
@@ -24,6 +29,8 @@ background-color: rgb(31, 31, 31);
     color: rgba(255, 255, 255, 0.733);
     background-color: rgb(31, 31, 31);
     padding-left: 20px;
+    margin-top: 180px;
+
 }
 .about input:focus{
     outline: none;
@@ -34,14 +41,10 @@ background-color: rgb(31, 31, 31);
 
 .projectContainer{
     display: none;
-    /* height: 100%; */
     width: 100%;
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
 }
 
 

@@ -1,0 +1,22 @@
+/* components/CustomCursor.module.css */
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.377);
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    z-index: 9999;
+  }
+  
+  .cursor.hover {
+    width: 70px;
+    border-radius: 0px;
+    height: 10px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.151);
+    transform: translate(-50%, -50%) scale(1.2);
+  }

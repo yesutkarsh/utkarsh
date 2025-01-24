@@ -1,9 +1,9 @@
 .nav{
-    background-color: #0f1316;
-    position: relative;
-    z-index: 999;
+    position: absolute;
+    z-index: 998;
     padding: 40px;
     display: grid;
+    width: 100%;
     grid-template-columns: 50% 50%;
     text-align: left;
 }

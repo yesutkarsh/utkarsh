@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import { Provider } from "react-redux";
 import store from "@/utils/store";
 const inter = Inter({ subsets: ["latin"] });
+import CustomCursor from '@/components/CustomCurser/Curser';
 export default function RootLayout({ children }) {
 
   
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <Provider store={store}>
+          <CustomCursor/>
           <NavBar />
           {children}
         </Provider>
