@@ -20,7 +20,7 @@ export default function About() {
             <div className="space-y-4">
               <div className="border-l-2 border-white/10 pl-4">
                 <h3 className="text-gray-100 font-medium">Certified Web Developer</h3>
-                <p className="text-gray-400 text-sm">MASAI School · 2024-2025</p>
+                <p className="text-gray-400 text-sm">MASAI <School></School> · 2024-2025</p>
               </div>
 
               <div className="border-l-2 border-white/10 pl-4">
@@ -35,7 +35,7 @@ export default function About() {
 
               <div className="border-l-2 border-white/10 pl-4">
                 <h3 className="text-gray-100 font-medium">10+2</h3>
-                <p className="text-gray-400 text-sm">Narayana Public School · 20212024</p>
+                <p className="text-gray-400 text-sm">Narayana Public School · 2021-2024</p>
               </div>
             </div>
           </section>
