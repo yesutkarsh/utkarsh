@@ -18,6 +18,12 @@ html, body{
   /* overflow: hidden; */
 }
 
+@media (min-width: 769px) {
+  html, body {
+    cursor: none;
+  }
+}
+
 a{
   text-decoration: none;
 }
