@@ -6,26 +6,28 @@ export const Projects = [
         github: "https://github.com/yesutkarsh/cloudIDE",
         deployedLink: "https://vscodeweb.vercel.app/",
         image: "https://res.cloudinary.com/dpcvcblbt/image/upload/v1725178230/portfolio/yvybairewmavb5elp7u2.png",
-        techStack: ["Next Js", "Monoco", "Docker"],
+        techStack: ["Next Js", "Monoco", "Docker", "Node Js"],
         tags: "repelit clone online code editor cloude ide javascript code sand box replit clone online editor ai artificial intelligence"
     },
     {
         id: 1,
-        title: "ECOMMERCE APP",
-        description: "ECOMMERCE APP with app modern ecoomerce features like cart, order, Authentication, Checkout, Previous Orders, Admin Panel to View Orders and more...",
-        github: "https://github.com/yesutkarsh/yesecommerce",
-        deployedLink: "https://yesecommerce.vercel.app/",
-        image: "https://res.cloudinary.com/dpcvcblbt/image/upload/v1725180345/portfolio/kcmshwpywlft3lvaacvj.png",
-        techStack: ["Next Js", "Authentication", "Docker"]
+        title: "NOTEBOOK ML",
+        description: "An open-source project that dynamically generates AI-driven podcast-style conversations using Google Cloud Text-to-Speech (SSML), saves audio files, and combines them into a final podcast episode.",
+        github: "https://github.com/yesutkarsh/NOTEBOOK-ML-OPEN-SOURCE",
+        deployedLink: "https://github.com/yesutkarsh/NOTEBOOK-ML-OPEN-SOURCE",
+        image: "https://cdn.analyticsvidhya.com/wp-content/uploads/2024/06/notebookml.png",
+        techStack: ["Node Js", "Google Cloud",],
+         tags: "notebook ml ai podcast artificial intelligence google cloud text to speech ssml audio files podcast episode"
     },
     {
         id: 1,
-        title: "Javascript IDE",
-        description: "JavaScript IDE/interpreter using Web Workers, enabling users to write and execute JavaScript code directly in the browser. Provides a seamless and efficient coding experience without relying on external servers.",
-        github: "https://github.com/yesutkarsh/Javascript-Compiler-IDE",
-        deployedLink: "https://mycompiler.vercel.app/",
-        image: "https://res.cloudinary.com/dpcvcblbt/image/upload/v1736443274/portfolio/JSIDE.png",
-        techStack: ["Next Js", "Web Worker"]
+        title: "MOVIE GPT",
+        description: "App that lets you pick movie according to your mood",
+        github: "https://github.com/yesutkarsh/yesnetflixGPT",
+        deployedLink: "https://yesnetflixgpt.vercel.app/browse",
+        image: "https://www.itedgenews.africa/wp-content/uploads/2023/10/CHatgpt.jpg",
+        techStack: ["Next Js", "Gemini", "TMDB"],
+         tags: "MOVIE GPT movie app mood movie gpt gemini mood netflix open ai"
     }
 
 

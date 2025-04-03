@@ -103,10 +103,9 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            A seasoned web developer specializing in the MERN
-            stack and Next.js framework. With a passion for crafting efficient,
-            dynamic, and user-friendly web applications, I bring expertise in
-            front-end and back-end development to the table.
+            I am a frontend developer with expertise in HTML, CSS, JavaScript, and React, passionate about creating clean, responsive, and user-friendly interfaces.
+            <br />
+            Beyond frontend, I have basic backend knowledge, allowing me to effectively communicate and collaborate with backend teams. I’m familiar with Node.js, Next.js, Google Cloud, Linux, and Docker, which helps me integrate APIs, optimize deployments, and troubleshoot efficiently.
           </motion.p>
 
           <motion.p
@@ -115,9 +114,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Expert MERN stack and Next.js developer here! Crafting dynamic and
-            efficient web applications is my specialty. Let&apos;s bring your
-            digital vision to life together!
+            I am a frontend developer skilled in HTML, CSS, JavaScript, and React, focused on building clean, responsive, and user-friendly interfaces. I also have basic backend knowledge (Node.js, Next.js, Google Cloud, Linux, Docker), enabling smooth collaboration with backend teams.
           </motion.p>
 
           <motion.div
@@ -135,7 +132,7 @@ export default function HomePage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            Mongo DB | Express JS | React JS | Node JS | Next JS | Typescript |
+            React | Javascript | Html | Css | Next JS | Node Js | 
             Git & Github | Google Cloud | Docker | Kubernetes | Linux |
           </motion.p>
 

@@ -9,8 +9,10 @@ export default function About() {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-4">About Me</h2>
             <p className="text-gray-300 font-light leading-relaxed">
-            I am a skilled and driven web developer specializing in the MERN stack and the Next.js framework. With a strong focus on crafting efficient, dynamic, and user-friendly web applications, I bring expertise in both front-end and back-end development to create seamless digital experiences. <br /> <br />
-            What sets me apart is my strong soft skills. I am an excellent communicator, capable of collaborating effectively across teams to bring ideas to life. I thrive in problem-solving scenarios, approaching challenges with creativity and determination. My ability to adapt, learn quickly, and stay organized ensures that I deliver high-quality results under tight deadlines.
+            I am a frontend developer with expertise in HTML, CSS, JavaScript, and React, passionate about creating clean, responsive, and user-friendly interfaces. I have a strong understanding of modern web development principles, ensuring performance and accessibility in every project.
+            <br />
+            <br />
+            Beyond frontend, I have basic backend knowledge, allowing me to effectively communicate and collaborate with backend teams. I am familiar with Node.js, Next.js, Google Cloud, Linux, and Docker, which helps me integrate APIs, optimize deployments, and troubleshoot efficiently.
             </p>
           </section>
   
@@ -44,7 +46,7 @@ export default function About() {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-4">Technical Skills</h2>
             <div className="flex flex-wrap gap-2">
-              {['Html, Css', 'JavaScript','TypeScript','React','Next Js' ,'Tailwind CSS', 'Node.js', 'Git','GitHub', 'REST APIs','Google Cloud'].map((skill) => ( 
+              {['Html, Css', 'JavaScript','React','Next Js' ,'Tailwind CSS', 'Node.js', 'Git','GitHub', 'REST APIs','Google Cloud'].map((skill) => ( 
                 <span key={skill} className="bg-gray-800 rounded-full px-4 py-2 text-sm text-gray-100">
                   {skill}
                 </span>
